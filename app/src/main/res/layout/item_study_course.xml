@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cvItemStudyCourse"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <caiflyy.pjy.today.widgets.CircleImageView
+                android:id="@+id/img_course_item"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorPrimary"
+                android:src="@drawable/img_study_course_item_ic"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/img_course_item"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_course_item_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/webLinkImgView"
+                    android:maxLines="1"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:text="John Doe"/>
+
+                <TextView
+                    android:id="@+id/tv_course_item_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_course_item_title"
+                    android:maxLines="1"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="14sp"
+                    tools:text="Founder"/>
+
+                <ImageView
+                    android:id="@+id/webLinkImgView"
+                    android:layout_width="21dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_course_item_title"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/tv_course_item_title"
+                    android:layout_marginRight="7dp"
+                    android:clickable="true"
+                    android:src="@drawable/img_study_course_item_ic_web"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <caiflyy.pjy.today.widgets.QuoteTextView
+            android:id="@+id/tv_course_item_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="3dp"
+            android:background="#f0f3f6"
+            android:padding="10dp"
+            android:textColor="#616468"
+            android:textSize="14sp"
+            tools:text="bummy_comments"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

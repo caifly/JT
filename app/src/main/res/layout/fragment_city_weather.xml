@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeContainer"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+                android:id="@+id/weatherNestedScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <caiflyy.pjy.today.widgets.WeatherLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true">
+
+                    <Space
+                            android:id="@+id/spacer"
+                            android:layout_width="1dp"
+                            android:layout_height="1dp"
+                            android:layout_centerInParent="true"/>
+
+                    <RelativeLayout
+                            android:id="@+id/layout_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/spacer"
+                            android:layout_marginBottom="8dp"
+                            android:visibility="invisible">
+
+                        <LinearLayout
+                                android:id="@+id/layout_details_humidity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/layout_details_aqi"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp">
+
+                            <TextView
+                                    android:id="@+id/tvWeatherNowHum"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="30%"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="16sp"/>
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="湿度"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="10sp"/>
+
+                        </LinearLayout>
+
+                        <View
+                                android:layout_width="1dp"
+                                android:layout_height="26dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/layout_details_humidity"
+                                android:background="#80ffffff"/>
+
+                        <LinearLayout
+                                android:id="@+id/layout_details_aqi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp">
+
+                            <TextView
+                                    android:id="@+id/tvWeatherNowPres"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="56"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="16sp"/>
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="气压"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="10sp"/>
+
+                        </LinearLayout>
+
+                        <View
+                                android:layout_width="1dp"
+                                android:layout_height="26dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/layout_details_wind"
+                                android:background="#80ffffff"/>
+
+                        <LinearLayout
+                                android:id="@+id/layout_details_wind"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/layout_details_aqi"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp">
+
+                            <TextView
+                                    android:id="@+id/tvWeatherNowWindSc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="3级"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="16sp"/>
+
+                            <TextView
+                                    android:id="@+id/tvWeatherNowWindDir"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="北风"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="10sp"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                            android:id="@+id/layoutWeatherNow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/layout_details"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="invisible">
+
+                        <TextView
+                                android:id="@+id/tvWeatherNowTemp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="72sp"
+                        />
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:id="@+id/tvWeatherNowString"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="18sp"
+                            />
+
+                            <TextView
+                                    android:id="@+id/tvWeatherTodayTempMax"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginTop="4dp"
+                                    android:drawablePadding="2dp"
+                                    android:drawableStart="@drawable/vector_weather_ic_temp_max"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="12sp"/>
+
+                            <TextView
+                                    android:id="@+id/tvWeatherTodayTempMin"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginTop="2dp"
+                                    android:drawablePadding="2dp"
+                                    android:drawableStart="@drawable/vector_weather_ic_temp_min"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="12sp"
+                            />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView_hourly"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:divider="@drawable/vector_divider"
+                        android:orientation="vertical"
+                        android:showDividers="middle|beginning">
+
+                    <caiflyy.pjy.today.widgets.WeatherChartView
+                            android:id="@+id/weatherChartView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="16dp"/>
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="16dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingTop="16dp">
+
+                        <caiflyy.pjy.today.widgets.AqiView
+                                android:id="@+id/aqiView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerViewAqi"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_toEndOf="@+id/aqiView"
+                        />
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerViewSuggestion"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                    />
+
+                </LinearLayout>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="数据来源：和风天气"
+                        android:textColor="@color/colorTextDark2nd"
+                        android:textSize="12sp"/>
+
+            </caiflyy.pjy.today.widgets.WeatherLinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</FrameLayout>

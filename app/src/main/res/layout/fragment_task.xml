@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_task"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    <!-- courtesy https://github.com/Clans/FloatingActionButton-->
+
+    <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/fabMenu_task"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            fab:menu_icon="@drawable/shape_task_fab_ic_filter"
+            fab:menu_labels_ellipsize="end"
+            fab:menu_labels_singleLine="true">
+
+        <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabMenuItemDaily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shape_task_fab_ic_daily"
+                fab:fab_colorNormal="#00A8E2"
+                fab:fab_colorPressed="#BBDEFB"
+                fab:fab_label="每日"
+                fab:fab_size="mini"/>
+        <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabMenuItemMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shape_task_fab_ic_month"
+                fab:fab_colorNormal="#00A8E2"
+                fab:fab_colorPressed="#BBDEFB"
+                fab:fab_label="每月"
+                fab:fab_size="mini"/>
+
+        <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabMenuItemYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shape_task_fab_ic_spend"
+                fab:fab_colorNormal="#00A8E2"
+                fab:fab_colorPressed="#BBDEFB"
+                fab:fab_label="每年"
+                fab:fab_size="mini"
+        />
+
+        <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabMenuItemImportant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shape_task_fab_ic_important"
+                fab:fab_colorNormal="#00A8E2"
+                fab:fab_colorPressed="#BBDEFB"
+                fab:fab_label="重要"
+                fab:fab_size="mini"
+        />
+
+        <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabMenuItemTrack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shape_task_fab_ic_track"
+                fab:fab_colorNormal="#00A8E2"
+                fab:fab_colorPressed="#BBDEFB"
+                fab:fab_label="足迹"
+                fab:fab_size="mini"
+        />
+
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:id="@+id/csLogin">
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/cv_sign"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="1dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+            android:id="@+id/imgSignInFoot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_login_foot_bg"
+            android:contentDescription="@string/sign_in_content_description_foot_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+    <View
+            android:id="@+id/viewSignInTitle"
+            android:layout_width="8dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            app:layout_constraintLeft_toLeftOf="@+id/cv_sign"
+            app:layout_constraintTop_toTopOf="@+id/cv_sign"/>
+
+    <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="50dp"
+            android:elevation="4dp"
+            android:text="@string/sign_in_title"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/viewSignInTitle"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toRightOf="@+id/viewSignInTitle"
+            app:layout_constraintRight_toRightOf="@+id/cv_sign"
+            app:layout_constraintTop_toTopOf="@+id/viewSignInTitle"
+            app:layout_constraintVertical_bias="0.447"/>
+
+    <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/iconSignInUser"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:text="@string/sign_in_icon_user"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toLeftOf="@+id/cv_sign"
+            app:layout_constraintTop_toBottomOf="@+id/viewSignInTitle"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:elevation="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iconSignInUser"
+            app:layout_constraintLeft_toRightOf="@+id/iconSignInUser"
+            app:layout_constraintRight_toRightOf="@+id/cv_sign"
+            app:layout_constraintTop_toTopOf="@+id/iconSignInUser">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtLoginUserPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/sign_in_hint_user"
+                android:inputType="number"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/iconSignInPassword"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:text="@string/sign_in_icon_password"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toLeftOf="@+id/iconSignInUser"
+            app:layout_constraintRight_toRightOf="@+id/iconSignInUser"
+            app:layout_constraintTop_toBottomOf="@+id/iconSignInUser"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:elevation="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iconSignInPassword"
+            app:layout_constraintLeft_toRightOf="@+id/iconSignInPassword"
+            app:layout_constraintRight_toRightOf="@+id/cv_sign"
+            app:layout_constraintTop_toTopOf="@+id/iconSignInPassword">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtLoginUserPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/sign_in_hint_password"
+                android:inputType="textPassword"
+                tools:ignore="HardcodedText"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="43dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/iconPasswordConfirm"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:text="@string/sign_up_icon_confirm"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="@+id/iconSignInPassword"
+            app:layout_constraintRight_toRightOf="@+id/iconSignInPassword"
+            app:layout_constraintTop_toBottomOf="@+id/iconSignInPassword"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutConfirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:elevation="4dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/iconPasswordConfirm"
+            app:layout_constraintLeft_toRightOf="@+id/iconPasswordConfirm"
+            app:layout_constraintRight_toRightOf="@+id/cv_sign"
+            app:layout_constraintTop_toTopOf="@+id/iconPasswordConfirm">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtRegisterConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/sign_up_hint_confirm"
+                android:inputType="textPassword"
+                tools:ignore="HardcodedText"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="43dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+            android:id="@+id/btnSignGo"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/shape_login_btn_bg"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:stateListAnimator="@drawable/animator_login_btn_press_state_z"
+            android:text="@string/sign_in_button_login"
+            android:textColor="@color/colorTextDark"
+            app:layout_constraintTop_toBottomOf="@id/iconPasswordConfirm"
+            app:layout_constraintBottom_toBottomOf="@+id/cv_sign"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center"
+            android:elevation="4dp"
+            android:foreground="@drawable/vector_login_fab_bg"
+            android:transitionName="signFab"
+            app:fabSize="normal"
+            app:layout_constraintTop_toTopOf="@+id/cv_sign"
+            app:layout_constraintEnd_toEndOf="@id/cv_sign"
+            app:layout_constraintStart_toEndOf="@id/cv_sign"/>
+    <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:lottie_fileName="loading.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            android:elevation="10dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 侧滑菜单 开发者联系菜单 -->
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_nav_header_2_way_line_top_bottom"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+    <RelativeLayout
+            android:id="@+id/navActionPhone"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_nav_header_1_way_line_right">
+
+        <com.joanzapata.iconify.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/nav_icon_phone"
+                android:textColor="#90FFFFFF"
+                android:textSize="30sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/navActionMail"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_nav_header_1_way_line_right">
+
+        <com.joanzapata.iconify.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/nav_icon_email"
+                android:textColor="#90FFFFFF"
+                android:textSize="30sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/navActionMessage"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1">
+
+        <com.joanzapata.iconify.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/nav_icon_message"
+                android:textColor="#90FFFFFF"
+                android:textSize="30sp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

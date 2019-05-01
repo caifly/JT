@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <caiflyy.pjy.today.widgets.WeatherLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <caiflyy.pjy.today.widgets.dynamic.DynamicWeatherView
+                android:id="@+id/dynamicWeatherView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+    </caiflyy.pjy.today.widgets.WeatherLinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+            android:id="@+id/weatherViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <caiflyy.pjy.today.widgets.SimplePagerIndicator
+            android:id="@+id/pager_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_fileName="loading.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            android:elevation="10dp"
+            android:layout_gravity="center"/>
+
+</FrameLayout>

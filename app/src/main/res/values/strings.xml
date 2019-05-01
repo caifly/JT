@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">JT</string>
+    <!-- 权限请求-->
+    <string name="permission_phone_call">本功能需要您的打电话权限</string>
+    <string name="permission_location">本功能需要您的手机定位权限</string>
+    <string name="toast_deny_call_phone">电话权限被拒绝</string>
+    <string name="toast_permit_call_phone">拨打电话已授权</string>
+    <string name="phone_number">13801111513</string>
+    <string name="toast_app_exit">双击退出程序</string>
+    <string name="dialog_user_login">"此功能需要用户登录，是否要登录？"</string>
+    <!-- Navigation -->
+    <string name="nav_icon_phone">{fa-phone}</string>
+    <string name="nav_icon_email">{fa-envelope}</string>
+    <string name="nav_icon_message">{fa-commenting}</string>
+    <string name="nav_text_menu_open">open</string>
+    <string name="nav_text_menu_close">close</string>
+    <string name="nav_menu_text_today">今天天气</string>
+    <string name="nav_menu_text_home">主页介绍</string>
+    <string name="nav_menu_text_self_setting">个人设置</string>
+    <string name="nav_menu_text_logout">用户登出</string>
+    <string name="nav_menu_text_login">用户登录</string>
+    <string name="nav_menu_text_location">位置信息</string>
+    <string name="nav_menu_text_news">最新技术</string>
+    <string name="nav_menu_text_study">技术学习</string>
+    <string name="nav_menu_text_task">日常任务</string>
+    <string name="nav_menu_text_daily">日程安排</string>
+    <string name="nav_menu_text_project">项目展示</string>
+    <string name="nav_menu_text_vip">加入会员</string>
+    <!-- Home -->
+    <string name="home_welcome">欢迎您的到来</string>
+    <string name="home_shared">分享您的心得</string>
+    <string name="home_shared_code">分享项目源码</string>
+    <string name="home_shared_question">技术问题咨询</string>
+    <string name="home_shared_pay">随意捐赠支持</string>
+    <string name="home_shared_share">分享应用软件</string>
+    <string name="home_shared_update">检查软件更新</string>
+    <string name="home_shared_bug">意见错误反馈</string>
+    <string name="home_indicate">划开右侧菜单，开启神奇的Android之旅</string>
+    <string name="aboutContent">
+        时光飞逝一去不反，本应用名字为《今天》，意在让你把握今天展望未来。\n本应用为教学辅助而生，帮助大家学习和巩固课上所学内容，并扩展大家的视野，不断提升Android开发的技术能力。\n本应用主要内容包括天气信息、位置信息，学习计划设计安排、知识点回顾视频讲解、新技术介绍、技术评论、技术问答、知识分享、生活数据统计、个人信息设置、电子商品、意见反馈等，诸多模块。如您有其他需求也可随时练习作者，我们期待您的新创意。
+    </string>
+
+    <!-- Login -->
+    <string name="sign_in_hint_user">请输入电话号码</string>
+    <string name="sign_in_content_description_foot_image">signInFootImage</string>
+    <string name="sign_in_title">欢迎您的到来</string>
+    <string name="sign_in_icon_user">{fa-user}</string>
+    <string name="sign_in_icon_password">{fa-key}</string>
+    <string name="sign_in_hint_password">请输入登陆密码</string>
+    <string name="sign_in_button_login">登陆</string>
+    <string name="sign_in_button_register">注册</string>
+    <string name="sign_up_icon_confirm">{fa-gavel}</string>
+    <string name="sign_up_hint_confirm">请再次确认密码</string>
+    <string name="sign_in_error_phone">错误的电话格式</string>
+    <string name="sign_in_error_password">请填写至少6位数密码</string>
+    <string name="sign_up_error_confirm">两次密码输入不一致</string>
+    <string name="register_error_message">注册失败，请稍后再试</string>
+    <string name="sign_in_error_message">登陆失败，请检查输入或网络</string>
+
+    <!-- Technology -->
+    <plurals name="likes_count">
+        <item quantity="one">%d 喜欢！</item>
+        <item quantity="other">%d 喜欢</item>
+    </plurals>
+
+    <!-- Study -->
+    <string name="text_study_tab_title_class">分类</string>
+    <string name="text_study_tab_title_favorite">收藏</string>
+    <!-- Task -->
+    <string name="swipe_to_delete">Swipe to delete</string>
+    <string name="infinite_loading">Infinite loading</string>
+    <string name="full_bleed_item">A full bleed item</string>
+    <string name="updating_group">Updating group</string>
+    <string name="updating_group_subtitle">Click the shuffle icon to update the list with a random set of changes.
+    </string>
+    <string name="expanding_group">Expanding group</string>
+    <string name="expanding_group_subtitle">Tap on the header to expand or contract the group.</string>
+    <string name="vertical_columns">Vertical columns</string>
+    <string name="multiple_columns">Multiple columns with even spacing</string>
+    <string name="carousel">Carousel</string>
+    <string name="carousel_subtitle">Swipe this section horizontally to scroll its items.</string>
+    <string name="update_with_payload">Update with payload</string>
+    <string name="update_with_payload_subtitle">These items demonstrate robust, efficient partial asynchronous updates
+    </string>
+
+    <!-- Demo -->
+    <string name="demo_happy_birthday_title">生日贺卡</string>
+    <string name="demo_happy_birthday_desc">非常简单的小项目，理解控件，布局及它们的属性编辑技巧</string>
+    <string name="demo_fun_story_title">随机趣事</string>
+    <string name="demo_fun_story_desc">非常简单的小项目，界面简单，重点在数据的封装及相互调用的理解</string>
+    <string name="demo_coffee_order_title">咖啡订单</string>
+    <string name="demo_coffee_order_desc">界面较为复杂的小项目，理解视图树，并灵活使用布局嵌套</string>
+    <string name="demo_guess_number_title">猜数字</string>
+    <string name="demo_guess_number_desc">双界面的小项目，理解Activity原理，掌握多界面间跳转及参数传递，掌握Android中的多线程机制</string>
+
+    <!-- Setting -->
+    <string name="text_setting_username">用户姓名</string>
+    <string name="text_setting_usermail">验证邮箱</string>
+    <string name="text_setting_usergrant">性别</string>
+    <string name="text_setting_male">男</string>
+    <string name="text_setting_female">女</string>
+    <string name="text_setting_add">添加</string>
+    <string name="text_setting_can_edit">是否需要修改</string>
+    <string name="text_setting_edit_message">个人信息修改后需重新登陆才可再次修改！</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">caiwei-bj@263.net</string>
+    <string name="send_message_title">问题反馈</string>
+    <string name="toast_login_fail">登录失败</string>
+
+</resources>

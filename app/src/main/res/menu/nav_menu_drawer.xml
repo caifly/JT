@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 侧滑菜单 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/actionHome"
+            android:icon="@drawable/vector_nav_menu_ic_home"
+            android:title="@string/nav_menu_text_home" />
+        <item
+            android:id="@+id/actionWeather"
+            android:icon="@drawable/vector_nav_menu_ic_weather"
+            android:title="@string/nav_menu_text_today" />
+        <item
+            android:id="@+id/actionArticle"
+            android:icon="@drawable/vector_nav_menu_ic_technology"
+            android:title="@string/nav_menu_text_news" />
+        <item
+            android:id="@+id/actionLocation"
+            android:icon="@drawable/vector_nav_menu_ic_location"
+            android:title="@string/nav_menu_text_location" />
+        <item
+            android:id="@+id/actionStudy"
+            android:icon="@drawable/vector_nav_menu_ic_study"
+            android:title="@string/nav_menu_text_study" />
+        <item
+            android:id="@+id/actionTask"
+            android:icon="@drawable/vector_nav_menu_ic_task"
+            android:title="@string/nav_menu_text_task" />
+        <item
+            android:id="@+id/actionCalendar"
+            android:icon="@drawable/vector_nav_menu_ic_daily"
+            android:title="@string/nav_menu_text_daily" />
+        <item
+            android:id="@+id/actionDemo"
+            android:icon="@drawable/vector_nav_menu_ic_project"
+            android:title="@string/nav_menu_text_project" />
+
+        <item
+            android:id="@+id/actionProfile"
+            android:icon="@drawable/vector_nav_menu_ic_self_setting"
+            android:title="@string/nav_menu_text_self_setting" />
+        <item
+            android:id="@+id/fragmentA"
+            android:icon="@drawable/vector_nav_menu_ic_vip"
+            android:title="@string/nav_menu_text_vip" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:checkable="false"
+            android:icon="@drawable/vector_nav_menu_ic_login"
+            android:title="@string/nav_menu_text_logout" />
+    </group>
+
+</menu>
