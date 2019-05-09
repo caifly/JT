@@ -16,8 +16,8 @@ import caiflyy.pjy.today.R
 import caiflyy.pjy.today.data.weather.AqiDetailBean
 import caiflyy.pjy.today.database.weather.Weather
 import caiflyy.pjy.today.repository.TodayRepository
-import caiflyy.pjy.today.utils.CITY_ID
-import caiflyy.pjy.today.utils.CITY_NAME
+import caiflyy.pjy.today.utils.EXTRA_KEY_CITY_ID
+import caiflyy.pjy.today.utils.EXTRA_KEY_CITY_NAME
 import caiflyy.pjy.today.utils.TAG
 import caiflyy.pjy.today.widgets.dynamic.*
 import com.chad.library.adapter.base.BaseQuickAdapter
@@ -73,8 +73,8 @@ class CityWeatherFragment : Fragment(), NestedScrollView.OnScrollChangeListener 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val cityID = arguments?.getLong(CITY_ID)!!
-        val cityName = arguments?.getString(CITY_NAME)!!
+        val cityID = arguments?.getLong(EXTRA_KEY_CITY_ID)!!
+        val cityName = arguments?.getString(EXTRA_KEY_CITY_NAME)!!
         swipeContainer.setOnRefreshListener(SwipeRefreshLayout.OnRefreshListener {
             todayRepository.getCloudWeatherInfo(cityID,cityName,false)
             swipeContainer.isRefreshing = false

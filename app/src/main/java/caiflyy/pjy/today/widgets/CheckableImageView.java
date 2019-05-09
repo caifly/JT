@@ -4,7 +4,14 @@ import android.content.Context;
 import androidx.appcompat.widget.AppCompatImageView;
 import android.util.AttributeSet;
 import android.widget.Checkable;
-
+/**
+ * 项目名称：Today
+ * 包名：caiflyy.pjy.today.widgets
+ * 日期：2018/6/1
+ * 描述：可选图片自定义控件
+ *
+ * @author 蔡葳
+ */
 public class CheckableImageView extends AppCompatImageView implements Checkable {
 
     public CheckableImageView(Context context) {

@@ -20,7 +20,7 @@ class WeatherViewModel(private val todayRepository:TodayRepository) : ViewModel(
     }
 
     fun saveCurrentItem(LauncherActionId: Int) {
-        todayRepository.saveCurrentItem(LauncherActionId)
+//        todayRepository.saveCurrentItem(LauncherActionId)
     }
 
     fun getCites(): LiveData<List<City>> {

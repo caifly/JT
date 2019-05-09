@@ -54,7 +54,7 @@ class LocationFragment : Fragment(), LocationSource, AMapLocationListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         mapView.onCreate(savedInstanceState)
-        todayRepository.saveCurrentItem(R.id.actionLauncherLocation)
+//        todayRepository.saveCurrentItem(R.id.actionLauncherLocation)
         aMap = mapView.map
         sensorEventHelper = SensorEventHelper(context)
         sensorEventHelper.registerSensorListener()
@@ -129,8 +129,8 @@ class LocationFragment : Fragment(), LocationSource, AMapLocationListener {
 
     override fun onLocationChanged(aMapLocation: AMapLocation?) {
         if (mListener != null && aMapLocation != null) {
-            if (aMapLocation.getErrorCode() === 0) {
-                val location = LatLng(aMapLocation.getLatitude(), aMapLocation.getLongitude())
+            if (aMapLocation.errorCode == 0) {
+                val location = LatLng(aMapLocation.latitude, aMapLocation.longitude)
                 if (!mFirstFix) {
                     mFirstFix = true
                     //添加定位精度圆

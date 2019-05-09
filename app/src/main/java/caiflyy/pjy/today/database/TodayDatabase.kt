@@ -10,7 +10,7 @@ import caiflyy.pjy.today.database.weather.*
 
 /**
  * 项目名称：JT
- * 包名：caiflyy.pjy.today.data.database
+ * 包名：caiflyy.pjy.today.database
  * 日期：2019/4/14
  * 描述：数据库生成类
  * @author 蔡葳

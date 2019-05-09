@@ -4,7 +4,7 @@ package caiflyy.pjy.today.ui.technology
  * 项目名称：JT
  * 包名：caiflyy.pjy.today.ui.weather
  * 日期：2019/4/10
- * 描述：天气界面数据提供
+ * 描述：技术文章界面数据提供
  * @author 蔡葳
  */
 import androidx.lifecycle.LiveData
@@ -26,7 +26,7 @@ class ArticleViewModel(private val todayRepository:TodayRepository) : ViewModel(
         todayRepository.getCloudArticleInfo()
     }
 
-    fun saveCurrentItem(actionWeather: Int) {
-        todayRepository.saveCurrentItem(actionWeather)
+    fun saveCurrentItem(actionId: Int) {
+//        todayRepository.saveCurrentItem(actionWeather)
     }
 }

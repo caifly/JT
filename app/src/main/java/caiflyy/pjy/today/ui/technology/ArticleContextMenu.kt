@@ -50,21 +50,15 @@ class ArticleContextMenu(context: Context?) : LinearLayout(context) {
     }
 
     fun onReportClick() {
-        if (onItemClickListener != null) {
-            onItemClickListener.onReportClick(feedItem)
-        }
+        onItemClickListener.onReportClick(feedItem)
     }
 
     fun onSharePhotoClick() {
-        if (onItemClickListener != null) {
-            onItemClickListener.onSharePhotoClick(feedItem)
-        }
+        onItemClickListener.onSharePhotoClick(feedItem)
     }
 
     fun onCopyShareUrlClick() {
-        if (onItemClickListener != null) {
-            onItemClickListener.onCopyShareUrlClick(feedItem)
-        }
+        onItemClickListener.onCopyShareUrlClick(feedItem)
     }
 
     fun onCancelClick() {

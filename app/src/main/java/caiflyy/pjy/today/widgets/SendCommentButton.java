@@ -9,7 +9,7 @@ import caiflyy.pjy.today.R;
 
 /**
  * 项目名称：Today
- * 包名：caiflyy.pjy.today.business.comment.widgets
+ * 包名：caiflyy.pjy.today.widgets
  * 日期：2018/6/1
  * 描述：提交按钮自定义文本控件
  *

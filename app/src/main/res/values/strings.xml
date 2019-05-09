@@ -86,12 +86,28 @@
     <!-- Demo -->
     <string name="demo_happy_birthday_title">生日贺卡</string>
     <string name="demo_happy_birthday_desc">非常简单的小项目，理解控件，布局及它们的属性编辑技巧</string>
+    <string name="demo_happy_dice_title">掷骰子</string>
+    <string name="demo_happy_dice_desc">非常简单的小项目，掌握控件的设置，点击事件的处理</string>
     <string name="demo_fun_story_title">随机趣事</string>
     <string name="demo_fun_story_desc">非常简单的小项目，界面简单，重点在数据的封装及相互调用的理解</string>
     <string name="demo_coffee_order_title">咖啡订单</string>
     <string name="demo_coffee_order_desc">界面较为复杂的小项目，理解视图树，并灵活使用布局嵌套</string>
     <string name="demo_guess_number_title">猜数字</string>
     <string name="demo_guess_number_desc">双界面的小项目，理解Activity原理，掌握多界面间跳转及参数传递，掌握Android中的多线程机制</string>
+    <string name="demo_happy_me_title">自我介绍</string>
+    <string name="demo_happy_me_desc">单界面的小项目，掌握LinearLayout使用，控件的设置（宽高、可见性、边距、颜色、大小等），style的使用等</string>
+    <string name="demo_happy_color_title">多彩控件</string>
+    <string name="demo_happy_color_desc">单界面的小项目，掌握ConstraintLayout使用，约束设置，宽高设置，guideline，bias，chain等</string>
+    <string name="demo_happy_click_title">点击游戏</string>
+    <string name="demo_happy_click_desc">阶段综合项目，复习回归所学的知识，包括控件，布局，界面设计，点击事件处理，代码逻辑等</string>
+    <string name="demo_remind_title">记事簿</string>
+    <string name="demo_remind_desc">阶段综合项目，掌握Activity生命周期，ListView的使用，数据持久化，广播接收者等相关知识。</string>
+    <string name="demo_exam_title">小测试</string>
+    <string name="demo_exam_desc">阶段综合项目，掌握Android中的Navigation组件的使用，完成导航及数据传递。</string>
+    <string name="demo_greeting_title">打招呼</string>
+    <string name="demo_greeting_desc">单界面小项目，掌握ViewModel的使用。</string>
+    <string name="demo_star_title">满天星</string>
+    <string name="demo_star_desc">单界面小项目，掌握LiveData的使用。</string>
 
     <!-- Setting -->
     <string name="text_setting_username">用户姓名</string>
@@ -103,10 +119,70 @@
     <string name="text_setting_can_edit">是否需要修改</string>
     <string name="text_setting_edit_message">个人信息修改后需重新登陆才可再次修改！</string>
 
+    <!-- Demo04 -->
+    <string name="box_one">Box One</string>
+    <string name="box_two">Box Two</string>
+    <string name="box_three">Box Three</string>
+    <string name="box_four">Box Four</string>
+    <string name="box_five">Box Five</string>
+    <string name="how_to_play">This is a game:</string>
+    <string name="tap_the_boxes_and_buttons">Tap the screen and buttons.</string>
+
+    <string name="button_red">RED</string>
+    <string name="button_yellow">YELLOW</string>
+    <string name="button_green">GREEN</string>
+
+    <!-- Demo05 -->
+    <string name="btnTxt">点击我</string>
+    <string name="tvTime">剩余时间:%s</string>
+    <string name="tvScore">您的分数：%s</string>
+    <string name="game_over_message">游戏结束，您的得分是：%s</string>
+    <string name="game_menu">游戏菜单</string>
+    <string name="about_title">点击游戏: %s</string>
+    <string name="about_message">30秒内看谁快!!</string>
+    <!-- Demo07 -->
+    <string name="tvTitle">Coffee</string>
+    <string name="dessert01">巧克力</string>
+    <string name="dessert02">冰激淋</string>
+    <string name="dessert03">曲奇饼</string>
+    <string name="btnAdd">+</string>
+    <string name="btnSub">-</string>
+    <!-- Demo09 -->
+    <string name="add_task">添加新项</string>
+    <string name="description">请输入任务的描述</string>
+    <string name="done">提交</string>
+    <string name="alert_title">任务</string>
+    <string name="delete">删除</string>
+    <string name="cancel">取消</string>
+    <!--Demo10 -->
+    <string name="submit_button">提交</string>
+    <string name="try_again">是否再来一次?</string>
+    <string name="title_android_trivia_question">Android Trivia (%1$d/%2$d)</string>
+    <!-- Demo11 -->
+    <string name="language_label">Language:</string>
+    <string name="formal">Formal</string>
+    <string name="informal">Informal</string>
+    <string name="enter_a_name">Enter a name</string>
+    <string name="show_greeting">Show Greeting</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="email">caiwei-bj@263.net</string>
     <string name="send_message_title">问题反馈</string>
     <string name="toast_login_fail">登录失败</string>
+    <string name="demo01_title">祝张三生日快乐</string>
+    <string name="demo01_foot">来自好友李四</string>
+    <string name="demo01_label">生日贺卡</string>
+    <string name="demo02_label">掷骰子</string>
+    <string name="demo03_label">自我介绍</string>
+    <string name="demo04_label">多彩控件</string>
+    <string name="demo05_label">点击游戏</string>
+    <string name="demo06_label">随机趣事</string>
+    <string name="demo07_label">咖啡订单</string>
+    <string name="demo08_label">猜数字</string>
+    <string name="demo09_label">记事簿</string>
+    <string name="demo10_label">小测试</string>
+    <string name="demo11_label">打招呼</string>
+    <string name="demo12_label">满天星</string>
 
 </resources>

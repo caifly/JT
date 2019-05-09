@@ -89,4 +89,10 @@
         <item>@color/orange_500</item>
         <item>@color/deep_orange_500</item>
     </array>
+
+    <color name="youWinDark">#35A571</color>
+    <color name="youWinBackground">#B7F8C9</color>
+    <color name="gameOverBackground">#f8bbd0</color>
+
+    <color name="colorLight">#546E7A</color>
 </resources>

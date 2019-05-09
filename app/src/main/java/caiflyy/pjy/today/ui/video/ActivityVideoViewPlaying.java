@@ -300,7 +300,7 @@ public class ActivityVideoViewPlaying extends AppCompatActivity implements IMedi
 //        mVV.setInitPlayPosition(1 * 1000); // 指定初始播放位置，单位为毫秒；
 //        mVV.reSetRender(); // 清除上一个播放源的最后遗留的一帧
 //        mVV.setVideoPath(info.getUrl());
-//        mVV.start();
+//        mVV.vector_demo10_start();
     }
 
     boolean isPausedByOnPause = false;

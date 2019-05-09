@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/starField"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black">
+
+    <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/audiowide_regular"
+            android:text="开始"
+            android:textColor="@android:color/white"/>
+
+    <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_margin="16dp"
+            android:background="@color/colorPrimary"
+            android:enabled="false"
+            android:fontFamily="@font/audiowide_regular"
+            android:text="重置"
+            android:textColor="@android:color/white"/>
+
+</FrameLayout>

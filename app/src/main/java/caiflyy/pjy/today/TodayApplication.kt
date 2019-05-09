@@ -11,7 +11,14 @@ import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 import org.koin.core.logger.Level
 
-
+/**
+ * 项目名称：JT
+ * 包名：caiflyy.pjy.today
+ * 日期：2019/4/11
+ * 描述：应用程序类
+ * 完成所有的初始化工作
+ * @author 蔡葳
+ */
 class TodayApplication : Application() {
 
     override fun onCreate() {

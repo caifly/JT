@@ -14,7 +14,7 @@ import caiflyy.pjy.today.utils.SizeUtils
 
 /**
  * 项目名称：JT
- * 包名：caiflyy.pjy.today.utils
+ * 包名：caiflyy.pjy.today.ui.technology
  * 日期：2019/4/24
  * 描述：文章的上下文菜单管理类
  * @author 蔡葳

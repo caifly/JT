@@ -456,7 +456,7 @@ public class BDCloudVideoView extends FrameLayout implements MediaController.Med
             return;
         }
         // we shouldn't clear the target state, because somebody might have
-        // called start() previously
+        // called vector_demo10_start() previously
         release(false);
 
         AudioManager am = (AudioManager) mAppContext.getSystemService(Context.AUDIO_SERVICE);
@@ -751,14 +751,14 @@ public class BDCloudVideoView extends FrameLayout implements MediaController.Med
                     if (!mRenderView.shouldWaitForResize() || mSurfaceWidth == mVideoWidth && mSurfaceHeight == mVideoHeight) {
                         // We didn't actually change the size (it was already at the size
                         // we need), so we won't get a "surface changed" callback, so
-                        // start the video here instead of in the callback.
+                        // vector_demo10_start the video here instead of in the callback.
                         if (isTryToPlaying) {
                             start();
                         }
                     }
                 }
             } else {
-                // We don't know the video size yet, but should start anyway.
+                // We don't know the video size yet, but should vector_demo10_start anyway.
                 // The video size might be reported to us later.
                 if (isTryToPlaying) {
                     start();
@@ -1039,7 +1039,7 @@ public class BDCloudVideoView extends FrameLayout implements MediaController.Med
                 mMediaPlayer.stop();
             }
 
-            mMediaPlayer.prepareAsync(); // will start() in onPrepared, because isTryToPlaying = true
+            mMediaPlayer.prepareAsync(); // will vector_demo10_start() in onPrepared, because isTryToPlaying = true
             sendCachingHintViewVisibilityMessage(true);
             setCurrentState(PlayerState.STATE_PREPARING);
         } else if (isInPlaybackState() ) {

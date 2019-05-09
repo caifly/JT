@@ -27,7 +27,6 @@ import java.util.List;
 /**
  * 基本的适配器
  */
-@SuppressWarnings("unused")
 public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter {
 
     protected LayoutInflater mInflater;

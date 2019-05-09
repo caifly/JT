@@ -432,7 +432,7 @@ public class AdvancedMediaController extends RelativeLayout implements OnClickLi
 //                } else {
 //                    Log.d(TAG, "playButton: Will invoke resume()");
 //                    playButton.setBackgroundResource(R.drawable.toggle_btn_pause);
-//                    mVideoView.start();
+//                    mVideoView.vector_demo10_start();
 //                }
 //            }
 //            break;

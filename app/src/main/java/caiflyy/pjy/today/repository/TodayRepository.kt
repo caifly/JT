@@ -18,7 +18,6 @@ import caiflyy.pjy.today.database.weather.ForecastDaily
 import caiflyy.pjy.today.database.weather.ForecastHourly
 import caiflyy.pjy.today.database.weather.LifeStyle
 import caiflyy.pjy.today.database.weather.Weather
-import caiflyy.pjy.today.utils.LOGIN_FAIL
 import caiflyy.pjy.today.utils.LocationUtils
 import caiflyy.pjy.today.utils.PREF_KEY_CURRENT_NAV_ITEM
 import caiflyy.pjy.today.utils.TAG
@@ -76,8 +75,6 @@ class TodayRepository:KoinComponent {
         AnkoLogger(TAG).error("====获取保存状态$currentView")
         if (BmobUser.getCurrentUser(TodayUser::class.java)!=null){
             AnkoLogger(TAG).error("====${BmobUser.getCurrentUser(TodayUser::class.java).location?.latitude}")
-        }else{
-//            navItem.postValue(R.id.actionHome)
         }
     }
 
@@ -123,7 +120,6 @@ class TodayRepository:KoinComponent {
                 }
             } else {
                 AnkoLogger(TAG).error("定位错误信息：${aMapLocation?.errorCode} --${aMapLocation.errorInfo}")
-                navItem.value = LOGIN_FAIL
             }
         })
     }
@@ -282,22 +278,25 @@ class TodayRepository:KoinComponent {
             override fun done(list: List<ArticleBean>, e: BmobException?) {
                 if (e == null) {
                     for (article in list) {
-                        val query = BmobQuery<TodayUser>()
-                        query.addWhereRelatedTo("likes", BmobPointer(article))
-                        query.findObjects(object : FindListener<TodayUser>() {
-                            override fun done(likes: List<TodayUser>, e: BmobException?) {
-                                if (e == null) {
-                                    article.likeCount = likes.size
-                                    if (BmobUser.getCurrentUser(TodayUser::class.java) in likes) {
-                                        AnkoLogger(TAG).error("喜爱的文章")
-                                        article.isLike = true
+                        val queryUser = BmobQuery<TodayUser>()
+                        queryUser.apply {
+                            addWhereRelatedTo("likes", BmobPointer(article))
+                            findObjects(object : FindListener<TodayUser>() {
+                                override fun done(likes: List<TodayUser>, e: BmobException?) {
+                                    if (e == null) {
+                                        article.likeCount = likes.size
+                                        if (BmobUser.getCurrentUser(TodayUser::class.java) in likes) {
+                                            AnkoLogger(TAG).error("喜爱的文章")
+                                            article.isLike = true
+                                        }
+                                        articleInfo.value = list
+                                    } else {
+                                        AnkoLogger(TAG).error("获取文章用户失败")
                                     }
-                                    articleInfo.value = list
-                                } else {
-                                    AnkoLogger(TAG).error("获取文章用户失败")
                                 }
-                            }
-                        })
+                            })
+                        }
+
                     }
                 } else {
                     AnkoLogger(TAG).error("获取文章信息失败")

@@ -31,7 +31,7 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        todayRepository.saveCurrentItem(R.id.actionLauncherHome)
+//        todayRepository.saveCurrentItem(R.id.actionLauncherHome)
         AnkoLogger(TAG).error("Home状态保存${R.id.actionLauncherHome}")
     }
 }

@@ -12,8 +12,12 @@ import java.util.regex.Pattern;
 import static java.util.regex.Pattern.compile;
 
 /**
- * Created by Tushar Saha on 12/4/15.
- * Audacity IT Solutions Ltd.
+ * 项目名称：Today
+ * 包名：caiflyy.pjy.today.widgets
+ * 日期：2018/6/1
+ * 描述：代引号的自定义文本控件
+ *
+ * @author 蔡葳
  */
 public class QuoteTextView extends AppCompatTextView {
 

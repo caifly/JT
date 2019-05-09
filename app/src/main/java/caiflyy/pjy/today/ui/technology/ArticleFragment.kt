@@ -83,6 +83,4 @@ class ArticleFragment : Fragment(), ArticleAdapter.OnItemButtonClickListener {
         })
         viewModel.getCloudArticleInfo()
     }
-
-
 }

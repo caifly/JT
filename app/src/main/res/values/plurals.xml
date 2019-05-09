@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <plurals name="greetings">
+    <item quantity="one">You\'ve had 1 greeting.</item>
+    <item quantity="other">You\'ve had %d greetings.</item>
+  </plurals>
+</resources>

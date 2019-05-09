@@ -16,7 +16,7 @@ import java.util.*
  * 项目名称：JT
  * 包名：caiflyy.pjy.today.ui.technology
  * 日期：2019/4/15
- * 描述：文章信息适配器
+ * 描述：文章评论信息适配器
  * @author 蔡葳
  */
 class CommentAdapter(layoutResId: Int, data: MutableList<NewsComments>?) :

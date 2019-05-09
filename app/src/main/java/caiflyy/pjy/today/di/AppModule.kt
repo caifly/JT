@@ -24,7 +24,7 @@ import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 /**
  * 项目名称：Demo08
- * 包名：caiflyy.pjy.demo08.di
+ * 包名：caiflyy.pjy.today.di
  * 日期：2019/4/10
  * 描述：依赖注入
  * @author 蔡葳

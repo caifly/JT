@@ -45,14 +45,25 @@ class ArticleAdapter(layoutResId: Int, data: MutableList<ArticleBean>?) :
         val imageView = holder.getView<ImageView>(R.id.img_news_item)
         imageLoaderManager.displayImage(item.imgPath, imageView)
         holder.getView<ImageButton>(R.id.btnNewsItemLike).let { it ->
-            if (item.isLike){
+            if (item.isLike) {
                 it.setImageResource(R.drawable.img_technology_item_ic_heart_red)
-            }else{
+            } else {
                 it.setImageResource(R.drawable.img_technology_item_ic_heart_outline_grey)
                 it.setOnClickListener {
                     animateHeartButton(it as ImageButton)
-                    val tsLikesCounter = holder.getView<TextSwitcher>(R.id.tsLikesCounter)
-                    updateLikesCounter(tsLikesCounter, item.likeCount+1)
+                    holder.getView<TextSwitcher>(R.id.tsLikesCounter)
+                        .let(fun(it: TextSwitcher) {
+                            val likesCountTextFrom = it.resources.getQuantityString(
+                                R.plurals.likes_count, item.likeCount + 1 - 1, item.likeCount + 1 - 1
+                            )
+                            it.setCurrentText(likesCountTextFrom)
+
+                            val likesCountTextTo = it.resources.getQuantityString(
+                                R.plurals.likes_count, item.likeCount + 1, item.likeCount + 1
+                            )
+                            it.setText(likesCountTextTo)
+                        })
+                    updateLikesCounter(tsLikesCounter, item.likeCount + 1)
                     onItemButtonClickListener.onLike(item)
                 }
             }

@@ -9,8 +9,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import caiflyy.pjy.today.R
 import caiflyy.pjy.today.database.city.City
-import caiflyy.pjy.today.utils.CITY_ID
-import caiflyy.pjy.today.utils.CITY_NAME
+import caiflyy.pjy.today.utils.EXTRA_KEY_CITY_ID
+import caiflyy.pjy.today.utils.EXTRA_KEY_CITY_NAME
 import caiflyy.pjy.today.utils.TAG
 import caiflyy.pjy.today.widgets.dynamic.DynamicWeatherView
 import kotlinx.android.synthetic.main.fragment_weather.*
@@ -49,8 +49,8 @@ class WeatherFragment : Fragment() {
                     AnkoLogger(TAG).error("已有城市id:"+city.id)
                     val cityWeatherFragment=CityWeatherFragment()
                     val data = Bundle()
-                    data.putLong(CITY_ID, city.id)
-                    data.putString(CITY_NAME, city.name)
+                    data.putLong(EXTRA_KEY_CITY_ID, city.id)
+                    data.putString(EXTRA_KEY_CITY_NAME, city.name)
                     cityWeatherFragment.arguments = data
                     adapter.addFrag(cityWeatherFragment, city.name)
                 }

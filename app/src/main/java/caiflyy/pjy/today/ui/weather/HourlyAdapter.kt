@@ -37,7 +37,7 @@ class HourlyAdapter(layoutResId: Int, data: MutableList<ForecastHourly>?) :
 
         WeatherUtil
             .getInstance(mContext)
-            .getWeatherDict(item?.cond_code)
+            .getWeatherDict(item.cond_code)
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe { weatherBean -> imageLoaderManager.displayImage(weatherBean.icon, imageView) }
     }

@@ -7,4 +7,25 @@
     <dimen name="padding_standard">16dp</dimen>
     <integer name="num_columns">2</integer>
     <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="margin_wide">16dp</dimen>
+    <dimen name="margin_half">8dp</dimen>
+    <dimen name="box_text_size">24sp</dimen>
+    <dimen name="txtSize">30sp</dimen>
+    <dimen name="tvMargin">50dp</dimen>
+
+    <dimen name="layoutPadding">8dp</dimen>
+    <dimen name="titleTextSize">30sp</dimen>
+    <dimen name="titleTopMargin">30dp</dimen>
+
+    <dimen name="vertical_margin">16dp</dimen>
+    <dimen name="horizontal_margin">8dp</dimen>
+    <dimen name="button_padding">16dp</dimen>
+    <dimen name="button_text_size">18sp</dimen>
+    <dimen name="question_horizontal_margin">32dp</dimen>
+    <dimen name="question_vertical_margin">8dp</dimen>
+    <dimen name="answer_text_size">18sp</dimen>
+    <dimen name="question_text_size">30sp</dimen>
+    <dimen name="image_header_height">192dp</dimen>
+    <dimen name="game_over_height">350dp</dimen>
 </resources>

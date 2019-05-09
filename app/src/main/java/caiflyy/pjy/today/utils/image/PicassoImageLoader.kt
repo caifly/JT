@@ -8,7 +8,7 @@ import com.squareup.picasso.Picasso
  * 项目名称：JT
  * 包名：caiflyy.pjy.today.utils.image
  * 日期：2019/4/15
- * 描述：
+ * 描述：Picasso图片加载库具体实现类
  * @author 蔡葳
  */
 class PicassoImageLoader:ImageLoaderApi {
